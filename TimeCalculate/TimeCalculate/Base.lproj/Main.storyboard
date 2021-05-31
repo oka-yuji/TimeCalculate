@@ -25,15 +25,15 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGe-KB-Wjh">
-                                        <rect key="frame" x="134.5" y="69" width="92" height="30"/>
-                                        <state key="normal" title="記録時間更新"/>
+                                        <rect key="frame" x="126.5" y="69" width="108" height="30"/>
+                                        <state key="normal" title="今の日時を記録"/>
                                         <connections>
                                             <action selector="upDateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ILt-qW-JKQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJR-gz-eyN">
                                         <rect key="frame" x="50" y="134" width="261" height="30"/>
-                                        <state key="normal" title="記録した時間と今の時間の差分を計算"/>
+                                        <state key="normal" title="記録した時間と今の日時の差分を計算"/>
                                         <connections>
                                             <action selector="subtractionCalculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FnT-ws-Oyh"/>
                                         </connections>
