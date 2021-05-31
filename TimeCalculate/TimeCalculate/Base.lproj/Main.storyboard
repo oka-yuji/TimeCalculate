@@ -17,38 +17,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="d9Y-66-FU2">
-                                <rect key="frame" x="26.5" y="194" width="361.5" height="219.5"/>
+                                <rect key="frame" x="76.5" y="194" width="261" height="150.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="時間を入力して下さい　例) 2021/06/01/01:57:55" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tY1-S5-da3">
-                                        <rect key="frame" x="10" y="0.0" width="341.5" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGe-KB-Wjh">
-                                        <rect key="frame" x="126.5" y="69" width="108" height="30"/>
+                                        <rect key="frame" x="76.5" y="0.0" width="108" height="30"/>
                                         <state key="normal" title="今の日時を記録"/>
                                         <connections>
                                             <action selector="upDateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ILt-qW-JKQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJR-gz-eyN">
-                                        <rect key="frame" x="50" y="134" width="261" height="30"/>
+                                        <rect key="frame" x="0.0" y="65" width="261" height="30"/>
                                         <state key="normal" title="記録した時間と今の日時の差分を計算"/>
                                         <connections>
                                             <action selector="subtractionCalculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FnT-ws-Oyh"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="差分を表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vp-Jr-qE4">
-                                        <rect key="frame" x="137" y="199" width="87" height="20.5"/>
+                                        <rect key="frame" x="87" y="130" width="87" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="tY1-S5-da3" secondAttribute="trailing" constant="10" id="4aD-Ro-YXg"/>
-                                    <constraint firstItem="tY1-S5-da3" firstAttribute="leading" secondItem="d9Y-66-FU2" secondAttribute="leading" constant="10" id="dB8-Uq-ecs"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,7 +50,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="inputTimeTextField" destination="tY1-S5-da3" id="EbJ-VJ-dj9"/>
                         <outlet property="subtractionTimeLabel" destination="7Vp-Jr-qE4" id="ex1-R1-zen"/>
                     </connections>
                 </viewController>

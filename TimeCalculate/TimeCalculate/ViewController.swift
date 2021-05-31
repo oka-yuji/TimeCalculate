@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak private var subtractionTimeLabel: UILabel!
-    @IBOutlet weak private var inputTimeTextField: UITextField!
 
     var logDate = Date()
     var nowDate = Date()
