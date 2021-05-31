@@ -27,6 +27,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGe-KB-Wjh">
                                         <rect key="frame" x="157.5" y="69" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="upDateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ILt-qW-JKQ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vp-Jr-qE4">
                                         <rect key="frame" x="160" y="134" width="41.5" height="20.5"/>
@@ -48,6 +51,10 @@
                             <constraint firstItem="d9Y-66-FU2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VLK-Io-SMf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputTimeTextField" destination="tY1-S5-da3" id="EbJ-VJ-dj9"/>
+                        <outlet property="timeLabel" destination="7Vp-Jr-qE4" id="ex1-R1-zen"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
