@@ -9,8 +9,17 @@ import XCTest
 @testable import TimeCalculate
 
 class TimeCalculateTests: XCTestCase {
-    var dateFormatter = DateFormatter()
-    
+    let minutes = 60
+    let hour = 3600
+    let day = 86400
+    let week = 604800
+    let month = 2592000
+    let year = 31536000
+    var dateFormatter = DateFormatter(calculate: SubtractionDate())
+    func testDate() {
+        dateFormatter.subtraction = 10
+        XCTAssertEqual(dateFormatter.isDate(), "0秒以内")
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,17 +28,4 @@ class TimeCalculateTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

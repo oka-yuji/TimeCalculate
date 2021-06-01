@@ -15,6 +15,7 @@ class DateFormatter {
         self.calculate = calculate
     }
     
+    // 日時の差分の初期値
     var subtraction = 0
     
     // 各に適した秒を定義
