@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak private var subtractionTimeLabel: UILabel!
     
-    let dateFormatter = DateFormatter(calculate: SubtractionDate())
+    private let dateFormatter = DateFormatter(calculate: SubtractionDate())
     override func viewDidLoad() {
         super.viewDidLoad()
     }

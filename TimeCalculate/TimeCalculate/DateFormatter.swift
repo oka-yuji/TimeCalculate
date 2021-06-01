@@ -8,23 +8,27 @@
 import Foundation
 
 class DateFormatter {
+    private let dateStore = DateStore()
+    
     private let calculate: Subtraction
     init(calculate: Subtraction) {
         self.calculate = calculate
     }
-    let minutes = 60
-    let hour = 3600
-    let day = 86400
-    let week = 604800
-    let month = 2592000
-    let year = 31536000
     
-    let dateStore = DateStore()
+    // 各に適した秒を定義
+    private let minutes = 60
+    private let hour = 3600
+    private let day = 86400
+    private let week = 604800
+    private let month = 2592000
+    private let year = 31536000
     
+    // 現在の日時を記録
     func updateLog() {
         dateStore.logDateAction()
     }
     
+    // 記録した日時と現在の日時の差分を条件によって変化させる
     func isDate() -> String {
         dateStore.nowDateAction()
         var isSubtraction = ""
@@ -48,8 +52,12 @@ class DateFormatter {
             subtractionReslut /= month
             isSubtraction = "\(subtractionReslut)ヶ月以内"
         default:
+            if subtractionReslut < 0 {
+             isSubtraction = "エラー"
+            } else {
             subtractionReslut /= year
             isSubtraction = "\(subtractionReslut)年以内"
+            }
         }
         return isSubtraction
     }
