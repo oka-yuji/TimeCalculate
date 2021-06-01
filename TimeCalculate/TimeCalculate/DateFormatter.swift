@@ -15,6 +15,8 @@ class DateFormatter {
         self.calculate = calculate
     }
     
+    var subtraction = 0
+    
     // 各に適した秒を定義
     private let minutes = 60
     private let hour = 3600
@@ -23,7 +25,7 @@ class DateFormatter {
     private let month = 2592000
     private let year = 31536000
     
-    // 現在の日時を記録
+    // 日時を記録
     func updateLog() {
         dateStore.logDateAction()
     }
@@ -32,7 +34,8 @@ class DateFormatter {
     func isDate() -> String {
         dateStore.nowDateAction()
         var isSubtraction = ""
-        var subtractionReslut = calculate.calculate(logDate: dateStore.logDate, nowDate: dateStore.nowDate)
+        subtraction = calculate.calculate(logDate: dateStore.logDate, nowDate: dateStore.nowDate)
+        var subtractionReslut = subtraction
         switch subtractionReslut {
         case 0...minutes:
             isSubtraction = "\(subtractionReslut)秒以内"

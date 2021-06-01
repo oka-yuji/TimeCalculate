@@ -9,7 +9,7 @@ import XCTest
 @testable import TimeCalculate
 
 class TimeCalculateTests: XCTestCase {
-    
+    var dateFormatter = DateFormatter()
     
 
     override func setUpWithError() throws {

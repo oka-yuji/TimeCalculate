@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     }
     //　記録した日時と今の日時の差分を表示する
     @IBAction private func subtractionCalculateButton(_ sender: Any) {
+        
         subtractionTimeLabel.text = dateFormatter.isDate()
     }
 }
