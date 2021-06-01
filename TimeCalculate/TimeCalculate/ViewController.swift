@@ -10,22 +10,16 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak private var subtractionTimeLabel: UILabel!
     
-    let upDateStore = DateStore()
-    let subtractionDate = SubtractionDate()
     let dateFormatter = DateFormatter(calculate: SubtractionDate())
-    var subtraction = 0
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+    // 今の日時を記録する
     @IBAction private func upDateButton(_ sender: Any) {
-        upDateStore.logDateAction()
+        dateFormatter.updateLog()
     }
-    
+    //　記録した日時と今の日時の差分を表示する
     @IBAction private func subtractionCalculateButton(_ sender: Any) {
-        upDateStore.nowDateAction()
-        subtraction = subtractionDate.calculate(logDate: upDateStore.logDate, nowDate: upDateStore.nowDate)
-        subtractionTimeLabel.text = dateFormatter.isDate(subtractionDate: subtraction)
-        print(subtraction)
+        subtractionTimeLabel.text = dateFormatter.isDate()
     }
 }

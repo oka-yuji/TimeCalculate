@@ -7,16 +7,6 @@
 
 import Foundation
 
-enum IsDate: Int {
-   case minutes = 60
-   case hour = 3600
-   case day = 86400
-   case week = 604800
-   case month = 2592000
-   case year = 31536000
-}
-
-
 class DateFormatter {
     private let calculate: Subtraction
     init(calculate: Subtraction) {
@@ -29,28 +19,37 @@ class DateFormatter {
     let month = 2592000
     let year = 31536000
     
-    func isDate(subtractionDate: Int) -> String {
-        let dateStore = DateStore()
+    let dateStore = DateStore()
+    
+    func updateLog() {
+        dateStore.logDateAction()
+    }
+    
+    func isDate() -> String {
+        dateStore.nowDateAction()
         var isSubtraction = ""
-        let subtractionReslut: Int =
-            1 + week
-//            calculate.calculate(logDate: dateStore.logDate, nowDate: dateStore.nowDate)
-print(subtractionReslut)
+        var subtractionReslut = calculate.calculate(logDate: dateStore.logDate, nowDate: dateStore.nowDate)
         switch subtractionReslut {
         case 0...minutes:
-            isSubtraction = "秒以内"
+            isSubtraction = "\(subtractionReslut)秒以内"
         case 0...hour:
-            isSubtraction = "分以内"
+            subtractionReslut /= minutes
+            isSubtraction = "\(subtractionReslut)分以内"
         case 0...day:
-            isSubtraction = "時間以内"
+            subtractionReslut /= hour
+            isSubtraction = "\(subtractionReslut)時間以内"
         case 0...week:
-            isSubtraction = "日以内"
+            subtractionReslut /= day
+            isSubtraction = "\(subtractionReslut)日以内"
         case 0...month:
-            isSubtraction = "週間以内"
+            subtractionReslut /= week
+            isSubtraction = "\(subtractionReslut)週間以内"
         case 0...year:
-            isSubtraction = "ヶ月以内"
+            subtractionReslut /= month
+            isSubtraction = "\(subtractionReslut)ヶ月以内"
         default:
-            isSubtraction = "年以内"
+            subtractionReslut /= year
+            isSubtraction = "\(subtractionReslut)年以内"
         }
         return isSubtraction
     }
