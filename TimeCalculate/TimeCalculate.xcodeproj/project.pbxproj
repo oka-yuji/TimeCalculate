@@ -15,6 +15,9 @@
 		28B406572663FDAA008DA965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B406552663FDAA008DA965 /* LaunchScreen.storyboard */; };
 		28B406622663FDAA008DA965 /* TimeCalculateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B406612663FDAA008DA965 /* TimeCalculateTests.swift */; };
 		28B4066D2663FDAA008DA965 /* TimeCalculateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4066C2663FDAA008DA965 /* TimeCalculateUITests.swift */; };
+		28B4067B266524C9008DA965 /* SubtractionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4067A266524C9008DA965 /* SubtractionDate.swift */; };
+		28B4067D26665EE0008DA965 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4067C26665EE0008DA965 /* DateFormatter.swift */; };
+		28B4067F266664C3008DA965 /* DateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4067E266664C3008DA965 /* DateStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		28B406682663FDAA008DA965 /* TimeCalculateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCalculateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B4066C2663FDAA008DA965 /* TimeCalculateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCalculateUITests.swift; sourceTree = "<group>"; };
 		28B4066E2663FDAA008DA965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28B4067A266524C9008DA965 /* SubtractionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionDate.swift; sourceTree = "<group>"; };
+		28B4067C26665EE0008DA965 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		28B4067E266664C3008DA965 /* DateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				28B4064A2663FDA8008DA965 /* AppDelegate.swift */,
 				28B4064C2663FDA8008DA965 /* SceneDelegate.swift */,
 				28B4064E2663FDA8008DA965 /* ViewController.swift */,
+				28B4067E266664C3008DA965 /* DateStore.swift */,
+				28B4067A266524C9008DA965 /* SubtractionDate.swift */,
+				28B4067C26665EE0008DA965 /* DateFormatter.swift */,
 				28B406502663FDA8008DA965 /* Main.storyboard */,
 				28B406532663FDAA008DA965 /* Assets.xcassets */,
 				28B406552663FDAA008DA965 /* LaunchScreen.storyboard */,
@@ -259,8 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				28B4064F2663FDA8008DA965 /* ViewController.swift in Sources */,
+				28B4067F266664C3008DA965 /* DateStore.swift in Sources */,
 				28B4064B2663FDA8008DA965 /* AppDelegate.swift in Sources */,
+				28B4067B266524C9008DA965 /* SubtractionDate.swift in Sources */,
 				28B4064D2663FDA8008DA965 /* SceneDelegate.swift in Sources */,
+				28B4067D26665EE0008DA965 /* DateFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

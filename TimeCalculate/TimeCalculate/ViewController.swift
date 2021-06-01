@@ -9,37 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak private var subtractionTimeLabel: UILabel!
-
-    var logDate = Date()
-    var nowDate = Date()
+    
+    let upDateStore = DateStore()
+    let subtractionDate = SubtractionDate()
+    let dateFormatter = DateFormatter(calculate: SubtractionDate())
     var subtraction = 0
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction private func upDateButton(_ sender: Any) {
-        logDate = Date()
+        upDateStore.logDateAction()
     }
     
     @IBAction private func subtractionCalculateButton(_ sender: Any) {
-        nowDate = Date()
-        let subtractionSecond = nowDate.timeIntervalSince(logDate)
-        subtraction = Int(subtractionSecond)
-        subtractionTimeLabel.text = String(subtraction)
+        upDateStore.nowDateAction()
+        subtraction = subtractionDate.calculate(logDate: upDateStore.logDate, nowDate: upDateStore.nowDate)
+        subtractionTimeLabel.text = dateFormatter.isDate(subtractionDate: subtraction)
+        print(subtraction)
     }
 }
-
-
-enum DateStore {
-    case second
-    case minutes
-    case hour
-    case day
-    case week
-    case month
-    case year
-}
-
-//let dateFormatter = DateFormatter()
-//dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
-//print(dateFormatter.string(from: Date()))
