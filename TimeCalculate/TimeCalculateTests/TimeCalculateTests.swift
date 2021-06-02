@@ -9,16 +9,20 @@ import XCTest
 @testable import TimeCalculate
 
 class TimeCalculateTests: XCTestCase {
-    let minutes = 60
-    let hour = 3600
-    let day = 86400
-    let week = 604800
-    let month = 2592000
-    let year = 31536000
-    var dateFormatter = DateFormatter(calculate: SubtractionDate())
+    let isDate = IsDate(calculate: SubtractionCalculate())
+    let testLogDate = "2020-01-01 12:00:00"
+    let testNowDate = "2021-01-01 12:00:00"
+    
+    
     func testDate() {
-        dateFormatter.subtraction = 10
-        XCTAssertEqual(dateFormatter.isDate(), "0秒以内")
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let logDate = dateFormat.date(from: testLogDate)
+        let nowDate = dateFormat.date(from: testNowDate)
+        let reslut: String = isDate.isDate(isLogDate: logDate ?? Date(), isNowDate: nowDate ?? Date())
+        
+        XCTAssertEqual(reslut, "0秒以内")
+        
     }
 
     override func setUpWithError() throws {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28A13120266720840056E848 /* SubtractionCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A1311F266720840056E848 /* SubtractionCalculate.swift */; };
 		28B4064B2663FDA8008DA965 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4064A2663FDA8008DA965 /* AppDelegate.swift */; };
 		28B4064D2663FDA8008DA965 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4064C2663FDA8008DA965 /* SceneDelegate.swift */; };
 		28B4064F2663FDA8008DA965 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4064E2663FDA8008DA965 /* ViewController.swift */; };
@@ -15,9 +16,7 @@
 		28B406572663FDAA008DA965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B406552663FDAA008DA965 /* LaunchScreen.storyboard */; };
 		28B406622663FDAA008DA965 /* TimeCalculateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B406612663FDAA008DA965 /* TimeCalculateTests.swift */; };
 		28B4066D2663FDAA008DA965 /* TimeCalculateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4066C2663FDAA008DA965 /* TimeCalculateUITests.swift */; };
-		28B4067B266524C9008DA965 /* SubtractionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4067A266524C9008DA965 /* SubtractionDate.swift */; };
-		28B4067D26665EE0008DA965 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4067C26665EE0008DA965 /* DateFormatter.swift */; };
-		28B4067F266664C3008DA965 /* DateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4067E266664C3008DA965 /* DateStore.swift */; };
+		28B4067D26665EE0008DA965 /* IsDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4067C26665EE0008DA965 /* IsDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28A1311F266720840056E848 /* SubtractionCalculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionCalculate.swift; sourceTree = "<group>"; };
+		28A1315D2667B13E0056E848 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		28A1315E2667B13E0056E848 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		28B406472663FDA8008DA965 /* TimeCalculate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCalculate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B4064A2663FDA8008DA965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28B4064C2663FDA8008DA965 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,9 +54,7 @@
 		28B406682663FDAA008DA965 /* TimeCalculateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCalculateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B4066C2663FDAA008DA965 /* TimeCalculateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCalculateUITests.swift; sourceTree = "<group>"; };
 		28B4066E2663FDAA008DA965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28B4067A266524C9008DA965 /* SubtractionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionDate.swift; sourceTree = "<group>"; };
-		28B4067C26665EE0008DA965 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
-		28B4067E266664C3008DA965 /* DateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateStore.swift; sourceTree = "<group>"; };
+		28B4067C26665EE0008DA965 /* IsDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +108,8 @@
 				28B4064A2663FDA8008DA965 /* AppDelegate.swift */,
 				28B4064C2663FDA8008DA965 /* SceneDelegate.swift */,
 				28B4064E2663FDA8008DA965 /* ViewController.swift */,
-				28B4067C26665EE0008DA965 /* DateFormatter.swift */,
-				28B4067E266664C3008DA965 /* DateStore.swift */,
-				28B4067A266524C9008DA965 /* SubtractionDate.swift */,
+				28B4067C26665EE0008DA965 /* IsDate.swift */,
+				28A1311F266720840056E848 /* SubtractionCalculate.swift */,
 				28B406502663FDA8008DA965 /* Main.storyboard */,
 				28B406532663FDAA008DA965 /* Assets.xcassets */,
 				28B406552663FDAA008DA965 /* LaunchScreen.storyboard */,
@@ -222,6 +221,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 28B4063E2663FDA8008DA965;
 			productRefGroup = 28B406482663FDA8008DA965 /* Products */;
@@ -268,11 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28B4064F2663FDA8008DA965 /* ViewController.swift in Sources */,
-				28B4067F266664C3008DA965 /* DateStore.swift in Sources */,
+				28A13120266720840056E848 /* SubtractionCalculate.swift in Sources */,
 				28B4064B2663FDA8008DA965 /* AppDelegate.swift in Sources */,
-				28B4067B266524C9008DA965 /* SubtractionDate.swift in Sources */,
 				28B4064D2663FDA8008DA965 /* SceneDelegate.swift in Sources */,
-				28B4067D26665EE0008DA965 /* DateFormatter.swift in Sources */,
+				28B4067D26665EE0008DA965 /* IsDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +311,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				28B406512663FDA8008DA965 /* Base */,
+				28A1315D2667B13E0056E848 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -320,6 +320,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				28B406562663FDAA008DA965 /* Base */,
+				28A1315E2667B13E0056E848 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -331,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -392,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

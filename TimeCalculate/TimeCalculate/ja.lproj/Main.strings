@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "差分を表示"; ObjectID = "7Vp-Jr-qE4"; */
+"7Vp-Jr-qE4.text" = "差分を表示";
+
+/* Class = "UIButton"; normalTitle = "記録した時間と今の日時の差分を計算"; ObjectID = "KJR-gz-eyN"; */
+"KJR-gz-eyN.normalTitle" = "記録した時間と今の日時の差分を計算";
+
+/* Class = "UIButton"; normalTitle = "今の日時を記録"; ObjectID = "NGe-KB-Wjh"; */
+"NGe-KB-Wjh.normalTitle" = "今の日時を記録";
