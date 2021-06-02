@@ -21,7 +21,5 @@ class ViewController: UIViewController {
     //　記録した日時と今の日時の差分を表示する
     @IBAction private func subtractionCalculateButton(_ sender: Any) {
         subtractionTimeLabel.text = isDate.isDate(isLogDate: isDate.logDate, isNowDate: isDate.nowDate)
-        print(isDate.logDate)
-        print(isDate.nowDate)
     }
 }

@@ -25,16 +25,14 @@ class IsDate {
      var nowDate = Date()
     // 日時の差分の初期値
      var subtraction = 0
-    
     // 日時を記録
     func updateLog() {
         logDate = Date()
     }
-    
     // 記録した日時と現在の日時の差分を条件によって変化させる
     func isDate(isLogDate: Date, isNowDate: Date) -> String {
         nowDate = Date()
-        let fetchSubtraction: Int = calculate.calculate(logDate: logDate, nowDate: nowDate)
+        let fetchSubtraction: Int = calculate.calculate(logDate: isLogDate, nowDate: isNowDate)
         subtraction = fetchSubtraction
         switch subtraction {
         case 0...IsDate.minutes:
