@@ -31,7 +31,6 @@ class IsDate {
     }
     // 記録した日時と現在の日時の差分を条件によって変化させる
     func isDate(isLogDate: Date, isNowDate: Date) -> String {
-        nowDate = Date()
         let fetchSubtraction: Int = calculate.calculate(logDate: isLogDate, nowDate: isNowDate)
         subtraction = fetchSubtraction
         switch subtraction {

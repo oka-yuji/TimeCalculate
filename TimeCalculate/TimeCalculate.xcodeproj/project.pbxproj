@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28A13120266720840056E848 /* SubtractionCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A1311F266720840056E848 /* SubtractionCalculate.swift */; };
+		28A13160266B192B0056E848 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A1315F266B192B0056E848 /* SwiftUIView.swift */; };
 		28B4064B2663FDA8008DA965 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4064A2663FDA8008DA965 /* AppDelegate.swift */; };
 		28B4064D2663FDA8008DA965 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4064C2663FDA8008DA965 /* SceneDelegate.swift */; };
 		28B4064F2663FDA8008DA965 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4064E2663FDA8008DA965 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		28A1311F266720840056E848 /* SubtractionCalculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionCalculate.swift; sourceTree = "<group>"; };
 		28A1315D2667B13E0056E848 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		28A1315E2667B13E0056E848 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		28A1315F266B192B0056E848 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		28B406472663FDA8008DA965 /* TimeCalculate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCalculate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B4064A2663FDA8008DA965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28B4064C2663FDA8008DA965 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				28B4064A2663FDA8008DA965 /* AppDelegate.swift */,
 				28B4064C2663FDA8008DA965 /* SceneDelegate.swift */,
 				28B4064E2663FDA8008DA965 /* ViewController.swift */,
+				28A1315F266B192B0056E848 /* SwiftUIView.swift */,
 				28B4067C26665EE0008DA965 /* IsDate.swift */,
 				28A1311F266720840056E848 /* SubtractionCalculate.swift */,
 				28B406502663FDA8008DA965 /* Main.storyboard */,
@@ -269,6 +272,7 @@
 			files = (
 				28B4064F2663FDA8008DA965 /* ViewController.swift in Sources */,
 				28A13120266720840056E848 /* SubtractionCalculate.swift in Sources */,
+				28A13160266B192B0056E848 /* SwiftUIView.swift in Sources */,
 				28B4064B2663FDA8008DA965 /* AppDelegate.swift in Sources */,
 				28B4064D2663FDA8008DA965 /* SceneDelegate.swift in Sources */,
 				28B4067D26665EE0008DA965 /* IsDate.swift in Sources */,
